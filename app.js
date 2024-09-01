@@ -100,9 +100,28 @@ console.log(res);
 
 });
 
- 
  console.log(fourthnumber);
 
+ //Immutablility and mutability
+//Immutability
+ let name="samip";
+ let name1=name;
+ name2="Nepal";
+ console.log(name);
+ console.log(name1);
+ //Mutability
+ let per={
+    name2:"samip",
+    age:22
+
+ }
+ let person3=per;
+ person3.name2="samita";
+ console.log(per);
+ console.log(person3);
+
+ 
+ 
 
 
 
