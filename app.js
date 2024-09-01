@@ -81,6 +81,27 @@ const sum = (a, b) => {
  sum(2,3);
 console.log(res);
  
+//Immediate invoked
+((name)=>{
+    console.log(`Hello ${name}`);
+    
+})("Samip")
+
+//filter and map
+ let newnumber=[1,2,3,4,5,6,7,8]
+ let secondnumber=newnumber.filter((num)=>num<5);
+ console.log(secondnumber);
+  let thirdnumber=newnumber.map((num)=>num+10);
+ console.log(thirdnumber);
+
+ let fourthnumber=newnumber.reduce((acc,curr)=>{
+    console.log(`acc:${acc} curr:${curr}`);
+   return acc+curr
+
+});
+
+ 
+ console.log(fourthnumber);
 
 
 
