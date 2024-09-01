@@ -54,8 +54,33 @@ let text = "The quick brown fox jumps over the lazy dog";
 let regex = /quick/;
 let result = regex.exec(text);
 
-console.log(result); // ["quick", index: 4, input: "The quick brown fox jumps over the lazy dog", groups: undefined]
+console.log(result); 
 
+
+//function
+const samip1= function (name) {
+    console.log(`Nepal ${name}`);
+}
+samip1('Samip');
+//Arrow function
+const samip=(name)=>{
+    console.log(`Nepal ${name}`);
+}
+//if single function has single code then can be written as
+//const samip=(name)=>console.log(`Nepal ${name}`);
+//if you donot use parentthesis then {} and return should use 
+//if you  use parentthesis then not {} and return should use 
+
+samip('Samip');
+//implicit return
+let res;
+const sum = (a, b) => {
+     res = a + b;
+    return res;
+  };
+ sum(2,3);
+console.log(res);
+ 
 
 
 
