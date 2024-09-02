@@ -120,6 +120,48 @@ console.log(res);
  console.log(per);
  console.log(person3);
 
+ //destucturinig in array or using in function
+ const arr=[1,2,3,4,5];
+ const [a,b,c]=arr;
+ console.log(a);
+ console.log(b);
+ console.log(c);
+
+ const array=["js","j","py","c"];
+ const [d,e, ...f]=array;
+ console.log(d);//js
+ console.log(e);//j
+ console.log(f);//[ 'py', 'c' ]
+
+ function sums(...numbers) {
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+  }
+  console.log(sums(1, 2, 3)); // Output: 6
+
+ //destucturinig in object
+
+  const person={
+    firstname:"Samip",
+    lastname:"Nepal",
+    age:19
+  }
+
+  const {firstname,lastname,city="Ktm",age}=person;
+  console.log(firstname);
+ console.log(lastname);
+ console.log(age);
+ console.log(city);
+
+ ////destucturinig in function
+
+ const print=({lastname,firstname})=>(
+    console.log(firstname+` `+lastname));
+ print(person);
+
+ 
+
+ 
+
  
  
 
