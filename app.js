@@ -158,6 +158,28 @@ console.log(res);
     console.log(firstname+` `+lastname));
  print(person);
 
+ //for of loop /for in loop
+
+ //for in loop work for object and gives keys value and for array it gives index
+
+ for (let persons in person){
+    console.log(persons); 
+ }
+ //for the actutal value we need to do
+
+
+ for (let persons in person){
+    console.log(person[persons]);
+ }
+ //for of work for array and give actual value
+
+ for (let fruit of fruits){
+    console.log(fruit);  
+ }
+ //if we use for in loop it gives index
+ for (let fruit in fruits){
+    console.log(fruit);  
+ }
  
 
  
